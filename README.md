@@ -13,5 +13,5 @@ Once the participant did the 5, 7 or 9 manipulations seconding the block, the su
 Each block is separated by a black screen, and starts when the participant press the spacebar. 
  At the end of all the blocks, the participant will be informed by a plot of his/her successness by blocks. There will be an average of the trials per block for his/her participation.
  
-  The experiment collects the data of each participant and all the data will be little by little added to an overall plot, distinguish the 2 categories of participants, only for the purpose of the experimenters. 
+  The experiment collects the data of each participant and all the data will be little by little added to an overall plot, distinguishing the 2 categories of participants, only for the purpose of the experimenters. 
 
