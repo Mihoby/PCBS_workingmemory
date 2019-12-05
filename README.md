@@ -14,4 +14,7 @@ Each block is separated by a black screen, and starts when the participant press
  At the end of all the blocks, the participant will be informed by a plot of his/her successness by blocks. There will be an average of the trials per block for his/her participation.
  
   The experiment collects the data of each participant and all the data will be little by little added to an overall plot, distinguishing the 2 categories of participants, only for the purpose of the experimenters. 
+  
+  ## REFERENCES
+Song, W., Zhang, K., Sun, J., Ma, L., Jesse, F. F., Teng, X., … Li, W. (2013). A simple spatial working memory and attention test on paired symbols shows developmental deficits in schizophrenia patients. Neural plasticity, 2013, 130642. doi:10.1155/2013/130642
 
