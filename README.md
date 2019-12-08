@@ -16,5 +16,10 @@ Each block is separated by a black screen, and starts when the participant press
   The experiment collects the data of each participant and all the data will be little by little added to an overall plot, distinguishing the 2 categories of participants, only for the purpose of the experimenters. 
   
   ## REFERENCES
+
+Klencklen, G., Lavenex, P. B., Brandner, C., & Lavenex, P. (2017). Working memory decline in normal aging: Memory load and representational demands affect performance. Learning and Motivation, 60, 10-22.
+
+Klingberg, T. (2009). The overflowing brain: Information overload and the limits of working memory. Oxford University Press.
+
 Song, W., Zhang, K., Sun, J., Ma, L., Jesse, F. F., Teng, X., … Li, W. (2013). A simple spatial working memory and attention test on paired symbols shows developmental deficits in schizophrenia patients. Neural plasticity, 2013, 130642. doi:10.1155/2013/130642
 
