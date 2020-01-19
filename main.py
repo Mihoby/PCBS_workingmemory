@@ -2,9 +2,8 @@ import expyriment
 import numpy as np
 
 # Constants
-
-TRIAL_SIZE = [1, 1, 1]
-BLOCK_SIZE = [1, 1, 1]
+TRIAL_SIZE = [5, 7, 9]
+BLOCK_SIZE = [3, 3, 3]
 
 SIZE_SQUARE = 100
 TIME_BTW_STIM = 1000
