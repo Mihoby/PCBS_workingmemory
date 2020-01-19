@@ -3,8 +3,8 @@ import numpy as np
 
 # Constants
 
-TRIAL_SIZE = [1, 1, 1]
-BLOCK_SIZE = [1, 1, 1]
+TRIAL_SIZE = [5, 7, 9]
+BLOCK_SIZE = [3, 3, 3]
 
 SIZE_SQUARE = 100
 TIME_BTW_STIM = 1000
@@ -106,7 +106,7 @@ def main():
     age = present_form(exp)
     exp.data.add("AGE_PLAYER :" + age)
 
-    # Looping all blocks and all trials
+    # Looping on all blocks and all trials
     for block in range(len(exp.blocks)):
         stim_prepare.present()
         exp.clock.wait(TIME_BTW_TRIAL*2)
