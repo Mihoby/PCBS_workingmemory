@@ -2,12 +2,12 @@
 ## INTRODUCTION
 
 Many studies have reported a negative correlation between aging and working memory (Klencklen, and al. 2017). The working memory, firstly introduced by Baddeley in 1974, is a cognitive process that enables to keep in memory a certain amount of information during a short period. This type of memory can be perfectly illustrated in a spatial working memory task (Song, and al., 2013). 
-Therefore, this project aims to show a decline of the working memory with aging, by programming a spatial working memory task performed by individuals from two types of individuals: young adults (from 18 to 30 years) and adults (over 30 years). This aged delimitation has been done seconding the presumably apogee of the working memory at the end of the teenagehood (25-30 years), preceding the decline of this type of memory (Klingberg, 2007). 
+Therefore, this project aims to show a decline of the working memory with aging, by programming a spatial working memory task performed by participants from all ages (but ideally from 18 to more). It is however supposed that the apogee of the working memory is reached at the end of teenagehood, and then follows the decline of this type of memory (Klingberg, 2007). 
 
-The task will consist of 3 blocks of 3 trials. In each trial, a virgin matrix of 3x3 will be presented, and the block will begin after the participant pressed the space bar. Colours corresponding to a specific localisation on the canvas (or matrix) will successively and randomly pop up such as creating a sequence of 5, 7, and 9 colours corresponding to the 1st, 2nd and 3rd block. This way, the difficulty of the task increases. Each participant is hence, confronted to 9 trials with increasing difficulty. 
+The task described will consist of 3 blocks of 3 trials. In each trial, a virgin canvas (or matrix) of 3x3 will be presented, and the block will begin after the participant pressed the space bar. Colours corresponding to a specific localisation on the canvas will successively and randomly pop up such as creating a sequence of 5, 7, and 9 colours corresponding to the 1st, 2nd and 3rd block. This way, the difficulty of the task increases. Each participant is hence, confronted to 9 trials with increasing difficulty. 
 The colours appear successively at a speed 1/1 s. 
 At the end of each trial, the participant will have to reproduce the sequence: either by clicking on the cell of the canvas or by assimilating the digit pad to the matrix cells.
-The participant won't be informed of his/her successness by blocks. 
+The participant won't be informed of his/her successness. 
 The experiment collects the data of each participant and all the data will be little by little added to an overall plot, only for the purpose of the experimenters. 
   
 
