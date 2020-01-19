@@ -3,8 +3,8 @@ import numpy as np
 
 # Constants
 
-TRIAL_SIZE = [5, 7, 9]
-BLOCK_SIZE = [3, 3, 3]
+TRIAL_SIZE = [1, 1, 1]
+BLOCK_SIZE = [1, 1, 1]
 
 SIZE_SQUARE = 100
 TIME_BTW_STIM = 1000
@@ -102,9 +102,14 @@ def main():
     exp.mouse.show_cursor()
     score_player = 0
 
+    # Get the age of the user from the formular 
+    age = present_form(exp)
+    exp.data.add("AGE_PLAYER :" + age)
+
     # Looping all blocks and all trials
     for block in range(len(exp.blocks)):
-        exp.clock.wait(TIME_BTW_TRIAL)
+        stim_prepare.present()
+        exp.clock.wait(TIME_BTW_TRIAL*2)
         for trial in range(len(exp.blocks[block].trials)):
             for stimuli in range(len(exp.blocks[block].trials[trial].stimuli)):
                 exp.blocks[block].trials[trial].stimuli[stimuli].present()
@@ -126,8 +131,47 @@ def main():
     exp.data.add("SCORE_PLAYER :" + str(score_player))
     expyriment.control.end()
 
+def present_form(exp):
+    """ Present a formular asking the age of the user """
+    canvas = expyriment.stimuli.Canvas(size=(500,500))
+    Text_Form=expyriment.stimuli.TextLine(text="How old are you?")
+    enter_zone = expyriment.stimuli.Canvas(size=(40,20),colour=(100,100,100),position=(0,-50))
+    enter_zone.plot(canvas)
+    Text_Form.plot(canvas)
+    exp.keyboard.clear()
+    age = ""
+    
+    """Wait for the age to be enter"""
+    while True:
 
-def sequence_interaction(wich_stimulus, block_rand_pos, exp=None, square_on_canvas=None, CANVAS_SIZE=None):
+        key = exp.keyboard.check()
+
+        if key is not None:
+
+            if key == 13 and len(age)>0:
+                return age
+            if key == 8:
+                enter_zone.clear_surface()
+                age = age[:-1]
+
+            elif len(age)<3:
+
+                if 48<=key<=57:
+                    enter_zone.clear_surface()
+                    age = age +str(key-48) 
+                if 256<=key<=265:
+                    enter_zone.clear_surface()
+                    age = age +str(key-256) 
+
+        age_stim =expyriment.stimuli.TextLine(text=age)
+        age_stim.plot(enter_zone)
+        enter_zone.plot(canvas)
+        canvas.present()
+
+
+
+
+def sequence_interaction(wich_stimulus, block_rand_pos, exp, square_on_canvas, CANVAS_SIZE):
     """ Deal with the interaction sequence by checking the inputs from the mouse and the keypad """
     liste_touches = [expyriment.misc.constants.K_KP1, expyriment.misc.constants.K_KP2, expyriment.misc.constants.K_KP3,
                      expyriment.misc.constants.K_KP4, expyriment.misc.constants.K_KP5, expyriment.misc.constants.K_KP6,
