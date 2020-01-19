@@ -152,7 +152,7 @@ All data will be collected such as creating a plot that I'll talk about later.
 </pre></code>
 
 #### Ongoing Experiment 
-The age of the participant will be asked. During the participant-programm interaction, either the mouse or the keypad can be used to perform the task.
+Expyriment first requires the number of the partipant, then the age of the participant will be asked. During the participant-programm interaction, either the mouse or the keypad can be used to perform the task.
 If a trial is entirely successful, the participant gets one point, if no, it gets none. Data will be plot, using the curve_generator.py file.
 <pre><code>
 def present_form(exp):
