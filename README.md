@@ -14,7 +14,7 @@ The experiment collects the data of each participant and all the data will be li
 ## CODE EXPLANATION
 ### main.py
 #### Setting the constants of the stimuli
-Constants have first been created, such as indicating the size of the stimuli trials (5, 7 and 9), the size of the blocks (3 trials per block), the size of the canvas (background matrix), the duration between the duration between the stimuli presentation (1s), the duration between each trial (1s), the coulours that'll correspond to the stimuli and the background canvas. Texts are also add and will appear right before a trial ("Get ready!") and right after the presentation of the stimuli ("Now, your turn to reproduce the sequence!")
+Constants have first been created, such as indicating the size of the stimuli trials (5, 7 and 9), the size of the blocks (3 trials per block), the size of the canvas (background matrix), the duration between the stimuli presentation (1s), the duration between each trial (1s), the coulours that'll correspond to the stimuli and the background canvas. Texts are also add. 
 <pre><code>
 # Constants
 TRIAL_SIZE = [5, 7, 9]
@@ -118,7 +118,7 @@ Adequation of the stimuli within the trials, within each block in a random way.
 </pre></code>
 
 #### Formalities of the experiment, data collection 
-Constraints on the experiment are added. The age of the participants will be collected into a "data" file handled by expyriment. Time durations will be insert in trials and blocks, and at the end of each trial, the participant will interact with the programm. 
+Constraints on the experiment are added. The age of the participants will be collected into a "data" file handled by expyriment. Time durations will be insert in trials and blocks, The texts are added and will appear right before a trial ("Get ready!") and right after the presentation of the stimuli ("Now, your turn to reproduce the sequence!"), and at the end of each trial, the participant will interact with the programm. 
 All data will be collected such as creating a plot that I'll talk about later. 
 <pre><code>
  # Get the age of the user from the formular 
