@@ -128,7 +128,7 @@ def main():
             exp.data.add([exp.blocks[block].name, "trial n°" + str(exp.blocks[block].trials[trial].id)])
 
     # Adding the score of the player to the expyriment main file
-    exp.data.add("SCORE_PLAYER :" + str(score_player))
+    exp.data.add("SCORE_PLAYER :" + str(score_player)+"\\"+str(sum(BLOCK_SIZE)))
     expyriment.control.end()
 
 def present_form(exp):

@@ -16,7 +16,9 @@ for i in range(number_of_files):
         if re.match(r"(.)*AGE_PLAYER(.)*", line):
             age=int(re.findall("([0-9]+)", line)[1]) 
         if re.match(r"(.)*SCORE_PLAYER(.)*", line):
-            score=int(re.findall("([0-9]+)", line)[1])
+            numbers=re.findall("([0-9]+)", line)
+            # Score in percentage
+            score=int(numbers[1])/int(numbers[2])*100
         line = f.readline() 
     ages_and_score[age]=score
 
@@ -25,7 +27,7 @@ lists = sorted(ages_and_score.items()) # sorted by key, return a list of tuples
 ages,scores = zip(*lists)
 
 # Display the curve
-plt.xlabel('age')
-plt.ylabel('score')
+plt.xlabel('age (in years)')
+plt.ylabel('score (in percentage)')
 plt.plot(ages, scores)
 plt.show()
